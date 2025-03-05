@@ -45,8 +45,8 @@ INSERT INTO person (
   ethnicity_source_value, ethnicity_source_concept_id
 )
 VALUES (
-  2, 8507, 1974, 8, 4, '1974-08-04 00:00:00', 8516, 38003564,NULL, NULL, NULL,
-  NULL, 'MALE', 0, 'African American', 0, 'Not Hispanic or Latino', 0
+  2, 8507, 1974, 8, 4, '1974-08-04 00:00:00', 8516, 38003564, NULL, NULL, NULL,
+  NULL, 'Man', 0, 'African American', 0, NULL, 0
 );"
 
 executeSql(connection, sql)

@@ -261,7 +261,7 @@ Use `CohortGenerator` ([link](https://ohdsi.github.io/CohortGenerator/)) to buil
 #| output: false
 connectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "duckdb", 
-  server = file.path(getwd(), "data", "synthetic.duckdb"))
+  server = file.path(getwd(), "../data", "synthetic.duckdb"))
 
 cohortTableNames <- CohortGenerator::getCohortTableNames(
   cohortTable = "my_cohorts")
@@ -278,6 +278,10 @@ cohortsGenerated <- CohortGenerator::generateCohortSet(
   cohortTableNames = cohortTableNames,
   cohortDefinitionSet = cohortDefinitionSet)
 ```
+```{r}
+cohortDefinitionSet
+```
+
 
 ```{r}
 CohortGenerator::getCohortCounts(
